@@ -4,6 +4,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+        * Linked --> Doubly LinkedList --> to maintain insertion order
+        * Hash --> Hashing Algorithm
+        * Map --> Entry --> Key, Value pairs
+        */
 public class Main {
     public static void main(String[] args) {
         Map<String,Integer> cityPopulation = new LinkedHashMap<>();
