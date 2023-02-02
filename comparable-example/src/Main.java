@@ -72,6 +72,10 @@ public class Main {
         Collections.sort(employeeList);
         System.out.println(employeeList);
 
-        employeeList.stream().sorted(Comparator.comparing(Employee::getSalary)).toList().forEach(System.out::println);
+       // employeeList.stream().sorted(Comparator.comparing(Employee::getSalary)).toList()
+        // .forEach(System.out::println);
+        employeeList.stream().sorted(Comparator.comparing(employee -> employee.salary)).toList()
+                .forEach(employee -> System.out.println(employee) );
     }
-    }
+}
+
